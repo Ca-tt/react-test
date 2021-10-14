@@ -1,0 +1,42 @@
+.fadeIn-fadeOut {
+    animation-name: fadeIn-fadeOut;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-delay: .5s;
+
+    // main properties to animate
+    opacity: 0;
+    max-height: 0;
+
+    // remove margins and paddings from invisible elements
+    margin: 0;
+    padding: 0;
+}
+//
+.notification {
+    @extend .fadeIn-fadeOut;
+    margin-bottom: 0 !important;
+}
+//
+@keyframes fadeIn-fadeOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        max-height: 50%;
+        padding: 0 .25em;
+    }
+    50% {
+        opacity: 1;
+        max-height: 100%;
+    }
+    75% {
+        padding: 0 .25em;
+        max-height: 50%;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0;
+    }
+}
+

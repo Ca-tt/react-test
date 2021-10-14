@@ -1,0 +1,18 @@
+.block-for-animation-test {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #000000;
+  animation: change-background-color 2s infinite both;
+}
+
+@keyframes change-background-color {
+  0% {
+    background: #000000;
+  }
+
+  100% {
+    background: #ffa500;
+  }
+}
